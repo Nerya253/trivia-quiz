@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>השאלון המהיר</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="dialog-container">
+        <dialog id="dialog" open>
+            <h3>ברוכים הבאים לחידון מהיר</h3>
+            <p>חוקי המשחק פשוטים מאוד</p>
+            <p>כל מה שצריך לעשות הוא לענות על כמה יותר שאלות כמה שיותר מהר</p>
+            <p>על מנת לענות על תשובה יש ללחוץ על הכפתור עם הצבע המתאים</p>
+            <div>
+                <p class="btn-icon blue"></p>
+                <p class="btn-icon green"></p>
+                <p class="btn-icon red"></p>
+                <p class="btn-icon yellow"></p>
+            </div>
+            <button id="dialog-btn">לחץ על כפתור כדי להתחיל</button>
+        </dialog>
+    </div>
+
+    
+    <header>
+        <div class="game-info">
+            <span>
+                הניקוד הגבוהה ביותר: 
+                <span id="best-score">0</span>
+            </span>
+
+        </div>
+        <h1>החידון המהיר</h1>
+        <div class="game-info">
+            <p>ניקוד נוכחי:
+                <span id="curr-score">0</span>
+            </p>
+        </div>
+    </header>
+    <main>
+        <h2 id="question-title">
+            שאלה 
+            <span id="question-number">1</span>:
+            <span id="question"></span>
+        </h2>
+        <div id="all-answers">
+            <div class="answer-container">
+                <div class="square blue">
+                    <h2  class="answer-char">
+                        <!-- א -->
+                    </h2>
+                </div>
+                    <span id="answer-1" class="answers">
+                       תשובה לשאלה היא תשובה א
+                    </span>
+            </div>
+            <div class="answer-container">
+                <div class="square green">
+                    <h2 class="answer-char">
+                        <!-- ב -->
+                    </h2>
+                </div>
+                    <span id="answer-2" class="answers">
+                        תשובה לשאלה היא תשובה ב
+                    </span>
+            </div>
+            <div class="answer-container">
+                <div class="square red">
+                    <h2 class="answer-char">
+                        <!-- ג -->
+                    </h2>
+                </div>
+                    <span id="answer-3" class="answers">
+                        תשובה לשאלה היא תשובה ג
+                    </span>
+            </div>
+            <div class="answer-container">
+                <div class="square yellow">
+                    <h2 class="answer-char">
+                        <!-- ד -->
+                    </h2>
+                </div>
+                    <span id="answer-4" class="answers">
+                        תשובה לשאלה היא תשובה ד
+                    </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div id="bar">
+                <div id="progress"></div>
+            </div>
+    </footer>
+</body>
+</html>
